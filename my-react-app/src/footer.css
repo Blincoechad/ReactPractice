@@ -1,7 +1,13 @@
 .myFooter {
-    color: rgb(171, 23, 169);
-    font-size: 50px;
+    color: rgb(25, 180, 241);
+    font-size: 40px;
     padding: 30px;
+    transition: transform 0.3s ease-in-out;
 }
+ 
+ .myFooter:hover {
+    color: rgb(208, 50, 184);
+     transform: scale(1.1);
+ }
 
 

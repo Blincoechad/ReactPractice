@@ -11,23 +11,29 @@
   gap: 20px;
   padding: 30px 20px;        /* consistent padding */
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 15px rgba(22, 171, 184, 0.6);
   margin-right: 920px;
   border-radius: 20px;
 }
 
 /* Buttons */
 .nav-button {
-  border: 2px solid #555;
-  border-radius: 5px;
+  width: 180px;
+  border: 5px solid #096a77;
+  border-radius: 10px;
   background-color: rgb(8, 6, 6);
   padding: 8px 16px;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.2s;
+  margin-right: 80px;
+  padding: 20px;
+  transition: background-color .5s ease-in-out, transform 1.0s ease-in-out;
 }
 
 .nav-button:hover {
-  background-color: #0bcee4;
+  background-color: #0bcee4cb;
+  color: black;
+   transform: scale(1.05)
 }
 
