@@ -14,9 +14,10 @@ import './Time.css';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <NavBar />
-    <TheTime />
-    <App />
-    <MyFooter />
     
+    <App />
+    
+    <MyFooter />
+    <TheTime />
   </StrictMode>
 );

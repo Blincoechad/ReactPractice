@@ -1,41 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [color, setColor] = useState('black');
+
+  const changeColors = () => {
+    setColor(prev => (prev === 'rgb(20, 173, 187)' ? 'rgb(212, 45, 193)' : 'rgb(20, 173, 187)'));
+  };
 
   return (
     <>
-      <div className="div">
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
       <div>
-      
-    </div>
-      <h1 className="frameWorks">Vite + React</h1>
-    
-      <div className="card">
-        <button className="countButton" onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <h1 className="frameWorks">My FrameWork Practice Page</h1>
       </div>
 
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="buttonCards">
+        <div className="cards card1">
+          <p className="button-title" style={{ color }}>
+            Click Button To Count!
+          </p>
+          <button className="button1" onClick={() => setCount(count + 1)}>
+            count is {count}
+          </button>
+          <p className="button-subTitle" style={{ color }}>
+            <em>A button that keeps count</em>
+          </p>
+        </div>
+
+        <div className="cards card2">
+          <p className="button-title" style={{ color }}>
+            Click Button To 
+          </p>
+          <button className="button2" onClick={changeColors}>Change buttons Text Color</button>
+          <p className="button-subTitle" style={{ color }}>
+            <em>A button that</em>
+          </p>
+        </div>
+      </div>
+
+      
     </>
-  )
+  );
 }
 
-
-export default App
+export default App;

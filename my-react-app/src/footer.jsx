@@ -1,9 +1,10 @@
+import './Footer.css';
 function MyFooter() {
   return (
     <footer className="myFooter">
-    <p>
-      &copy; Chad Blincoe&apos;s Progress on Frameworks!
-    </p>
+      <p>
+       &copy; Chad Blincoe&apos;s Progress on Frameworks!
+      </p>
     </footer >
   );
 }
