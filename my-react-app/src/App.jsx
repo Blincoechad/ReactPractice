@@ -6,7 +6,7 @@ function App() {
   const [color, setColor] = useState('rgb(20, 173, 187)');
   const [textIndex, setTextIndex] = useState(0);
 
-  const textArray = ['Click The Button', 'Chad is...', 'Learning React'];
+  const textArray = ['Click The Button', 'Chad is...', 'Learning React!', ' and Creating Components!'];
 
   const changeColors = () => {
     setColor(prev =>
